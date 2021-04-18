@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body {
+
+   
+
+    overflow-x: hidden; 
+  }  
+#navbar{
+    width:100%;
+    height: 50px;
+   
+    background-image: url("/images/p4.jpg"); 
+    
+}
+
+#navlist{
+  list-style: none;
+  
+display: flex;
+justify-content: flex-end;
+z-index:1;
+      
+background: linear-gradient(to left, #33ccff 31%, #0000cc 101%);
+    /* background:#FF6152; */
+   overflow:auto;
+   font-family: 'Stick', sans-serif;
+   font-size: 20px;
+   color: black;
+   font-weight: 100;
+   position: relative;
+   margin-top: 0px;
+   transform: skew(0deg,10deg);
+  
+}
+
+#listgroup{
+  display: flex;
+  margin-right: 150px;
+}
+
+#navlist li{
+  margin-left: 20px;
+  padding: 10px;
+  font-size: 20px;
+  
+}
+
+
+#navlist li a{
+  text-decoration: none;
+
+  font-size: 20px;
+  color: black;
+}
+#navlist li a:hover{
+  color: #ff0066 ;
+}
+.headerweb{
+ 
+ width: 30%;
+ height: 0px;
+ float: left;
+}
+.menu{
+ 
+  width: 70%;
+  margin-top:0px;
+  float: right;
+  height: 50px;
+}
+.header1{
+  margin-left: 90px;
+  font-size:30px;
+ 
+  background: -webkit-linear-gradient(#49BBE0, #0664B3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Rock Salt', cursive;
+}
+#logo1{
+  height:50px;
+  width: 50px;
+ position: absolute;
+top: 5px;
+left: 10px;
+
+}
+
+
+
+#mainscreen{
+    background-image: url("/images/p4.jpg"); 
+
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display:flex;
+}
+#login{
+    width: 50%;
+   /* background-color: red; */
+    height: 100vh;
+}
+#details{
+    width: 50%;
+     /* background-color: green;  */
+    height: 100vh;
+   
+   
+  
+  
+}
+#middlesection{
+  width:100%;
+  height:100vh;
+  background-color: yellowgreen;
+}
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: gray;
+}
+
+/*login page*/
+
+
+#box{
+  width: 60%;
+  height: 70vh;
+  background-color: transparent;
+  margin:80px;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow:0 0 10px #0ff;
+  
+}
+#info{
+  width: 70%;
+  height: 60vh;
+ 
+  margin-top: 200px;
+  margin-left:60px;
+ 
+  
+}
+#info .headerdetails{
+  font-size: 80px;
+  font-family: 'Averia Serif Libre', cursive;
+ 
+  background: -webkit-linear-gradient( #3399ff 0%, #0066cc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+padding-left: 10px;
+
+text-align: left;
+} 
+.pdetails{
+  font-size: 30px;
+  background: -webkit-linear-gradient( #ff0066 0%, #ff0066 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-family: 'Averia Serif Libre', cursive;
+
+  text-align: left;
+  display: inline;
+}
+
+
+.headerhead {
+  color: #ff0066;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#inner{
+  width: 80%;
+  margin-left: 60px;
+
+ 
+}
+#mySidenav{
+  display: none;
+}
+#navbar span{
+  display: none;
+}
+
+/*loginpageelement*/
+
+form label{
+    color: blanchedalmond;
+}
+form input[type=text] {
+    background: rgba(255,255,255,1);
+    color:black;
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 20px;
+  }
+
+  form select{
+    background:rgba(255,255,255,1);
+    color: brown;
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 20px;
+  }
+  form button{
+    font-family: 'Akaya Telivigala', cursive;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+ display:inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-left: 160px;
+  
+  font-size: 20px;
+  }
+  .btncon{
+    background: rgba(255,255,255,0.04);
+    color: white; 
+    border: 2px solid #008CBA;
+    border-radius: 10px;
+  }
+  .btncon:hover{
+    background-color: #008CBA;
+    color: white;
+  }
+
+
+  .maintext{
+      color:white;
+      position: absolute;
+  top: 20%;
+  left: 70%;
+  width: 400px;
+      
+  }
+
+  /*middlesection*/
+
+  #midsection1{
+    width: 100%;
+    height: 50vh;
+    background-image: url(/images/p1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    display:flex;
+    
+  }
+  #midsection2{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+  }
+  .card{
+    position: relative;
+    top:100px;
+ 
+    width: 500px;
+    height:300px;
+    background-color: transparent;
+   margin-left: 80PX;
+    border:solid grey 5px;
+    border-radius: 10px;
+ 
+background: linear-gradient(to left, grey 31%, darkgrey 1010%);
+    left: 100px;
+    
+    
+  }
+  .card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+
+  }
+  .card h1{
+    font-size: 100px;
+  color: black;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+    justify-content: center;
+  
+margin-top: 60px;
+    
+    text-shadow: 0 0 10px grey, 0 0 20px grey, 0 0 30px grey, 0 0 40px grey, 0 0 50px #33ccff, 0 0 60px #e60073, 0 0 70px #33ccff;
+   
+    font-family: 'Averia Serif Libre', cursive;
+  }
+/*   
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  } */
+  .card p{
+    color: blanchedalmond;
+    font-size: 30px;
+    font-family: 'Averia Serif Libre', cursive;
+  }
+  .card1 {
+    margin-left: 50px;
+  }
+  
+  
+  
+
+
+@media only screen and (max-width : 640px) {
+    *{
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    #burger{
+      display: block;
+    }
+    
+    #mySidenav{
+      display: block;
+    }
+    #navbar{
+      width:100%;
+      height: 70px;
+      background-color: chocolate;
+    
+      
+     
+  }
+    #navbar span{
+      margin-top: -20px;
+      display: block;
+      float: right;
+    }
+    #mainscreen{
+        background-image: url("/images/p1.jpg");
+        width: 100%;
+        height: 200vh;
+        background-repeat: no-repeat;
+        background-size:cover;
+        display: block;
+       
+    }
+    .headerweb,.menu{
+      display: none;
+    }
+    #login{
+        width: 100%;
+        background-color: red;
+        height: 100vh;
+    }
+    #details{
+        width: 100%;
+        background-color: black;
+        height: 100vh;
+       
+    }
+
+    form button{
+      margin-left: 0px;
+    }
+    
+    
+    
+    footer{
+      width: 100%;
+      height: 70px;
+      background-color: gray;
+  }
+  
+  /*login page*/
+  
+  #inner{
+    text-align: center;
+    margin-left: 40px;
+  
+   
+  }
+  
+  .headerhead {
+    margin-left: 10px;
+
+    font-size: calc(20px + 2vh);
+    line-height: calc(10px + 20vh);
+  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+    color: #fccaff; */
+       color: #E6126D;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+
+
+    /* color: goldenrod;
+    font-size: 30px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+*/
+    font-family: 'New Tegomin', serif; 
+    font-family: 'Train One', cursive;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+ 
+
+  #box{
+    width: 100%;
+    height: 100vh;
+   /* background-image: url(/images/p3.jpg);
+   background-size: cover; */
+   background-color: black;
+    margin-left: -2px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+  }
+  #info{
+    width: 100%;
+    height: 100vh;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+  
+  }
+  /*details page*/
+  #info .headerdetails{
+    
+    font-size: 60px;
+   
+    font-family: 'Averia Serif Libre', cursive;
+  color:white;
+  padding-left: 10px;
+  
+  
+ 
+ 
+  
+  } 
+  #info h1 span {
+    display: block;
+    text-align: center;
+  }
+
+
+/*middlesection*/
+#middlesection{
+  width:100%;
+  height:250vh;
+  background-color: yellowgreen;
+  display: block;
+}
+
+#midsection1{
+  width: 100%;
+  height:125vh;
+  background-color: white;
+  align-content: center;
+  display:block;
+  
+}
+#midsection2{
+  width: 100%;
+  height: 125vh;
+  background-color: blue;
+}
+.card{
+  position:relative;
+    top:50px;
+ 
+    width: 300px;
+    height:200px;
+    background-color: transparent;
+   margin-left: 20px;
+   margin-top: 30px;
+    border:solid grey 5px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #33ccff 31%, #0000cc 101%);
+    left: 0px;
+/*     
+  display:flex;
+
+  top:100px;
+
+  width: 200px;
+  height:150px;
+  background-color: transparent;
+  margin-left: 100px;
+  border:solid grey 5px;
+  border-radius: 10px;
+  background-color:black; */
+
+ 
+  
+}
+.card:hover{
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+
+}
+
+
+
+
+
+
+
+
+  
+  }
+  .pdetails{
+    font-size: 30px;
+    color:white;
+    padding-left: 10px;
+    text-align: center !important;
+    font-family: 'Averia Serif Libre', cursive;
+    
+    
+ 
+
+   
+  }
+  
+ 
+    
+  
+    /*slidebar*/
+    
+    
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+     
+      transform: translateY(-12px) translateX(-2px) skew(20deg);
+      z-index: 1;
+      top: 0;
+      left:0;
+      margin-left: -100px;
+     
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      
+      display: block;
+      transition: 0.3s;
+      margin-left: 150px;
+    }
+    
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+    .sidegroup{
+      margin-top: 60px;
+    }
+    #cancelbtn{
+display:none;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 56px;
+      margin-left: 50px;
+    }
+    
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+    

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  
+  <div id="mySidenav" class="sidenav">
+    <div class="sidegroup">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+    <a href="#">Home</a>
+    <a href="#">code demos</a>
+    <a href="#">tutorials</a>
+    <a href="#">Contact us</a>
+  </div> 
+</div>
+    <div id="wrapper">  
+        <div id="navbar">
+         
+         
+        <span  id="menubtn"style="font-size:60px;cursor:pointer;color: aliceblue;" onclick="openNav()">&#9776; </span> 
+        <span  id="cancelbtn"style="font-size:60px;cursor:pointer;color: aliceblue; display:none" onclick="closeNav()">&times;</span>  
+        <div class="headerweb">
+  <h1 class="header1"><img src="/images/c2.png" id="logo1">CSS Unit Converter</h1>   
+ 
+
+   
+    
+       
+ </div>
+ <div class="menu">
+  <ul id="navlist">
+   <div id="listgroup">
+   <li><a href="index.html">Home</a></li>
+   <li><a href="codedemo.html">code demos</a></li>
+   <li><a href="codedemo.html">tutorials</a></li>
+   <li id="ak"><a href="codedemo.html">Contact us</a></li>
+  </div>
+
+</ul>
+ </div>
+        </div>
+          
+   
+        <div id="mainscreen">
+<div id="login">
+
+  <div id="box">
+   
+    <h1 class="headerhead">CSS Unit Converter</h1> 
+    <div id="inner">
+   
+    <form action="#">
+      <input type="text" placeholder="Enter amount" id="number"> <label for="unit1">Choose a Unit:</label>
+
+      <select name="unit1" id="unit1">
+        <option value="px">px</option>
+        <option value="vh">vh</option>
+        <option value="cm">cm</option>
+        <option value="em">em</option>
+      </select>
+     <label>TO</label>
+      <!-- <input type="text" placeholder="enter amount" id="answer"> <label for="unit2">Choose a Unit:</label> -->
+
+      <select name="unit2" id="unit2">
+        <option value="px">px</option>
+        <option value="vh">vh</option>
+        <option value="cm">cm</option>
+        <option value="em">em</option>
+      </select>
+      <button class="btncon" type="button" onclick="changeBodyBg()" id="convbtn">Convert</button>
+      <input type="text" placeholder="" id="answer">
+</form>
+</div>
+  </div>
+    
+</div>
+<div id="details">
+  <div id="info">
+ <h1 class="headerdetails"><span> CSS </span> <span> Unit </span>
+  <span> Converter </span>
+  
+   </h1> 
+ <p class="pdetails"> 
+  Enter the unit type you would like to convert from and the width or height you would like to convert from, then press calculate & this calculator will convert your input to the alternate units.this web sites specially for 
+  web devloper to get there work easy
+
+  </p>
+  
+</div>
+  
+</div>
+
+        </div>
+
+        <div id="middlesection">
+          <div id="midsection1">
+            <div class="card card1">
+              <h1>html</h1>
+              <!-- <p>
+                you have to learn html  there
+                 tricks and tips 
+              </p> -->
+
+
+              
+            </div>
+             <div class="card card2">
+              <h1>css</h1>
+              
+            </div>
+            <div class="card card3">
+              <h1>javascript</h1>
+              
+            </div> 
+            </div>
+
+
+            <div id="midsection2">
+              <div class="card2">
+                
+              </div>
+          </div>
+        
+        </div>
+        <footer>
+
+        </footer>
+
+</div>
+<script>
+
+// function openNav()
+// {
+//   if ( document.getElementById("mySidenav").style.display=="block") {
+//     document.getElementById("mySidenav").style.width = "100%";
+//     document.getElementById("cancelbtn").style.display ="block";
+//     document.getElementById("menubtn").style.display ="none";
+//   } else {
+//     document.getElementById("mySidenav").style.width = "0";
+//     document.getElementById("menubtn").style.display ="block";
+//   }
+// }
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("cancelbtn").style.display ="block";
+    document.getElementById("menubtn").style.display ="none";
+   }
+  
+ function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("menubtn").style.display ="block";
+    document.getElementById("cancelbtn").style.display ="none";
+  } 
+
+
+/*converter*/
+
+function changeBodyBg(){
+      num1 = document.getElementById("number").value;
+      var num2;
+
+      var textbox3 = document.getElementById('answer');
+ 
+        var unit1 = document.getElementById("unit1").value;
+       var  unit2 = document.getElementById("unit2").value;
+        // textbox3.value=unit1;
+
+         if(unit1=="px" && unit2=="cm")
+        {
+var num2=0.0264583333;
+        }else if(unit1=="px" && unit2=="em")
+        {
+          var num2=0.0625;
+        }
+        else{
+
+        }
+                var ans = parseFloat(num1) * parseFloat(num2);
+         textbox3.value = ans;
+    }
+
+
+  </script>
+</body>
+</html>
