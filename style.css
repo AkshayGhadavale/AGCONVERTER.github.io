@@ -20,7 +20,7 @@ body {
     width:100%;
     height: 50px;
    
-    background-image: url("p4.jpg"); 
+    background-image: url("/p4.jpg"); 
     
 }
 
@@ -100,7 +100,7 @@ left: 10px;
 
 
 #mainscreen{
-    background-image: url("p4.jpg"); 
+    background-image: url("/p4.jpg"); 
 
     width: 100%;
     height: 100vh;
@@ -271,7 +271,7 @@ form input[type=text] {
   #midsection1{
     width: 100%;
     height: 50vh;
-    background-image: url(p1.jpg);
+    background-image: url(/p1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     align-content: center;
@@ -367,7 +367,7 @@ margin-top: 60px;
       float: right;
     }
     #mainscreen{
-        background-image: url("p1.jpg");
+        background-image: url("/p1.jpg");
         width: 100%;
         height: 200vh;
         background-repeat: no-repeat;
